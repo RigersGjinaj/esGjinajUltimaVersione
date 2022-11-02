@@ -5,14 +5,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.List;
 
 public class ServerConnection extends Thread{
     private Socket s;
     PrintWriter out;
     BufferedReader in;
     BufferedReader keyboard;
-    static List<ServerConnection> threads;
 
     public ServerConnection(Socket s){
         this.s = s;
